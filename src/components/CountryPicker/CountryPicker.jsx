@@ -10,7 +10,7 @@ const CountryPicker = () => {
     const fetchAPI = async () => {
       setFetchedCountries(await fetchCountries());
     };
-
+    
     fetchAPI();
   }, [setFetchedCountries]);
 

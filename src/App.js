@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './App.module.scss';
-import { Cards, CountryPicker } from './components/';
+import { Cards, CountryPicker, Chart } from './components/';
 import logo from './images/image.png';
 import { fetchData } from './api';
 
@@ -23,8 +23,8 @@ class App extends React.Component {
       <div className={styles.container}>
         <img src={logo} className={styles.image} alt='COVID-19' />
         <Cards data={data} />
-        <CountryPicker/>
-        {/* chart */}
+        <CountryPicker />
+        <Chart data={data} />
       </div>
     );
   }
